@@ -1,0 +1,384 @@
+//
+// Application Stylesheet
+//
+
+@import "partials/base";
+@import "partials/content";
+@import "partials/layout";
+
+$orange: #f39c12;
+$silver: #7f8c8d;
+$blue: #2c3e50;
+$turquoise: #1abc9c;
+$pomegranate: #c0392b;
+$green: #16a085;
+$clouds: #ecf0f1;
+$bondDarkBlue: #408698;
+$bondLightBlue: #14BEC4;
+$bondRed: #EC6C66;
+$white: #FFFFFF;
+
+$grey: #555555;
+$red: #ea4a33;
+
+* { 
+	box-sizing: border-box;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.right {
+	float: right;
+}
+
+.bgcover {
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+h3 {
+	font-size: 20px;
+	color: $bondLightBlue;
+}
+
+
+p {
+	color: $grey;
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.content {
+	ul {
+		padding-left: 1em;
+		li {
+			font-size: 14px;
+		}
+	}
+
+	p {
+		margin-top: 0;
+	}
+}
+
+h3.callout {
+	padding: 10px;
+	font-size: 22px;
+	color: $red;
+	@extend .italic;
+} 
+
+
+
+
+.clearfix {
+	clear: both;
+}
+
+.wrapper {
+	width: 100%;
+	font-size: 14px;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 30px 0px;
+}
+
+#teamprofile {
+	padding: 10px 0px;
+}
+
+.col-left {
+	max-width: 360px;
+	width: 33.33%;
+	float: left;
+	padding-right: 20px;
+	// color: $bondLightBlue;
+
+	> h3 {
+		float: right;
+		font-size: 20px;
+		color: #555;
+		position: relative;
+		/* top: -7px; */
+		border: 3px #eee solid;
+		padding: 10px 20px;
+	}
+}
+
+.col-right {
+	max-width: 720px;
+	width: 66.66%;
+	float: left;
+	// margin-top: 10px;
+}
+
+.content {
+	.col-1 {
+		max-width: 240px;
+		width: 33%;
+		margin-right:3px;
+		float: left;
+	}
+	.col-2 {
+		max-width: 480px;
+		width: 66%;
+		float: left;
+		margin-right: 3px;
+	}
+	.col-max {
+		max-width: 720px;
+		width: 100%;
+		float:left;
+	}
+}
+
+
+
+.highlight {
+	font-size: 20px;
+	color: $bondLightBlue;
+	position: relative;
+} 
+
+.profile {
+	float: left;
+	max-width: 192px;
+	padding: 0 10px;
+	> p {
+		font-size: 13px;
+	}
+	> span {
+		display: block;
+	}
+	.name {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.title {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.item {
+		width: 95%;
+		float: left;
+	}
+}
+
+.methodcontainer {
+	float: left;
+	max-width: 210px;
+	padding: 0px 10px;
+	margin-bottom: 20px;
+	
+
+
+	h4 {
+		font-size: 18px;
+		color: $grey;
+		margin: 0;
+	}
+	.methodcontent {
+		width: 100%;
+		> .imgcontainer {
+			text-align: center;
+			max-width: 200px;
+			height: 120px;
+			display: table;
+			> img {
+				display: table-cell;
+				vertical-align: middle;
+				height: 80%;
+				width: 50%;
+				margin: 0 auto;
+
+			}
+		}
+	}
+}
+
+#topbar {
+	width: 100%;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 0;
+}
+
+#menu {
+	float:right;
+	position: relative;
+	right: 40px;
+}
+
+#bondlogo {
+	position: relative;
+	width: 62px;
+	left: 40px;
+}
+
+.project-img {
+	background: url(http://placehold.it/1600x600) no-repeat;
+	max-width: 1600px;
+	width: 100%;
+	height: 600px;
+}
+
+.imgcontainer {
+	// max-width: 1600px;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}
+
+.imgcontainer.cover {
+	background: url(../images/connect-header.jpg) no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.imgcontainer.domain-analysis {
+	background: url(../images/domainanalysis.jpg) no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.imgcontainer.field-discovery {
+	background: url(../images/field-discovery.jpg) no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.imgcontainer#team {
+	background: url(../images/team.jpg) no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	height: 312px;
+}
+#footer {
+	
+	background-size: cover;
+	background: $white;
+	height: 500px;
+	padding-top: 250px;
+	text-align: center;
+}
+.overlay-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: $bondLightBlue;
+}
+.overlay {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-container .overlay-close {
+	// width: 80px;
+	// height: 80px;
+	position: fixed;
+	right: 38px;
+	top: 45px;
+	overflow: hidden;
+	border: none;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+	img {
+		width: 32px;
+	}
+}
+.overlay-container nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.overlay-container ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+.overlay-container ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+	margin-bottom: 0.5em;
+}
+.overlay-container ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-decoration: none;
+
+}
+.overlay-container ul li a:hover,
+.overlay-container ul li a:focus {
+	color: $bondRed;
+}
+.overlay.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.overlay nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay-container nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay-container ul li {
+		min-height: 34px;
+	}
+}
